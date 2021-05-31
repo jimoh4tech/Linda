@@ -8,6 +8,22 @@
     &-green {
         color: #fff;
         background-color: var(--color-primary);
+
+        &-in {
+            color: #fff;
+            background-color: var(--color-primary);
+
+            @include responsive(phone) {
+                padding: 1rem;
+                padding-right: 35rem;
+            }
+        }
+
+        &-top {
+            color: #fff;
+            background-color: var(--color-primary);
+            padding: 1.5rem 4rem;
+        }
     }
     &-white {
         color: var(--color-primary);

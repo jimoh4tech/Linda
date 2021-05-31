@@ -8,6 +8,7 @@
 
     @include responsive(phone){
         margin: .5rem;
+        overflow: hidden;
     }
     
 }
@@ -132,18 +133,19 @@
 .home {
     &__header {
         text-align: center;
-        padding: 1rem 32%;
+        padding: 10% 32%;
 
         @include responsive(big-desktop){
-            padding: 1rem 33%;
+            padding: 10% 33%;
         }
 
         @include responsive(phone){
-            padding: .5rem 25%;
+            padding: 10% 25%;
         }
 
         @include responsive(phone-small){
-            padding: .5rem 10%;
+            padding: 10% 10%;
+            margin-bottom: 2rem;
         }
     }
 

@@ -38,6 +38,17 @@ body {
   .btn-green {
     color: #fff;
     background-color: var(--color-primary); }
+    .btn-green-in {
+      color: #fff;
+      background-color: var(--color-primary); }
+      @media only screen and (max-width: 37.5em) {
+        .btn-green-in {
+          padding: 1rem;
+          padding-right: 35rem; } }
+    .btn-green-top {
+      color: #fff;
+      background-color: var(--color-primary);
+      padding: 1.5rem 4rem; }
   .btn-white {
     color: var(--color-primary);
     background-color: #fff; }
@@ -479,7 +490,8 @@ body {
       margin: 2rem; } }
   @media only screen and (max-width: 37.5em) {
     .content {
-      margin: .5rem; } }
+      margin: .5rem;
+      overflow: hidden; } }
 
 .header {
   display: flex;
@@ -565,16 +577,17 @@ body {
 
 .home__header {
   text-align: center;
-  padding: 1rem 32%; }
+  padding: 10% 32%; }
   @media only screen and (min-width: 93.75em) {
     .home__header {
-      padding: 1rem 33%; } }
+      padding: 10% 33%; } }
   @media only screen and (max-width: 37.5em) {
     .home__header {
-      padding: .5rem 25%; } }
+      padding: 10% 25%; } }
   @media only screen and (max-width: 30em) {
     .home__header {
-      padding: .5rem 10%; } }
+      padding: 10% 10%;
+      margin-bottom: 2rem; } }
 
 .home__content {
   position: absolute;
