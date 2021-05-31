@@ -15,7 +15,7 @@
 
             @include responsive(phone) {
                 padding: 1rem;
-                padding-right: 35rem;
+                padding-right: 25rem;
             }
         }
 
@@ -130,7 +130,7 @@
         }
 
         @include responsive(phone){
-            width: 23%;  
+            width: 20%; 
         }
     }
 

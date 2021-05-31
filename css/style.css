@@ -44,7 +44,7 @@ body {
       @media only screen and (max-width: 37.5em) {
         .btn-green-in {
           padding: 1rem;
-          padding-right: 35rem; } }
+          padding-right: 25rem; } }
     .btn-green-top {
       color: #fff;
       background-color: var(--color-primary);
@@ -125,7 +125,7 @@ body {
         width: 18%; } }
     @media only screen and (max-width: 37.5em) {
       .specification:nth-child(1) {
-        width: 23%; } }
+        width: 20%; } }
   .specification:not(:nth-child(3)) {
     border-right: 1.7px solid var(--color-primary); }
   .specification__type {
@@ -619,7 +619,9 @@ body {
       .home__content-info {
         background-color: transparent;
         box-shadow: none;
-        padding: 0; } }
+        padding: 0;
+        width: 101%;
+        margin: 1% 0; } }
   .home__content-photo {
     margin: 0;
     height: 60rem;
@@ -634,7 +636,8 @@ body {
         height: 35rem; } }
     @media only screen and (max-width: 30em) {
       .home__content-photo {
-        margin-top: -12.5rem; } }
+        margin-top: -12.5rem;
+        height: auto; } }
 
 .section__home {
   margin: 1rem 0; }

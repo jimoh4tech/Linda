@@ -186,6 +186,8 @@
                 background-color: transparent;
                 box-shadow: none;
                 padding: 0;
+                width: 101%;
+                margin: 1% 0;
             }
             
         }
@@ -207,6 +209,7 @@
 
             @include responsive(phone-small){
                 margin-top: -12.5rem;
+                height: auto;
             }
         }
     }
