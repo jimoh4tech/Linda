@@ -1,0 +1,288 @@
+.content {
+    margin: auto 10rem;
+    max-width: 150rem;
+
+    @include responsive(tab-land){
+        margin: 2rem;
+    }
+
+    @include responsive(phone){
+        margin: .5rem;
+    }
+    
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3rem 0;
+    font-size: 1.5rem;
+
+    @include responsive(big-desktop){
+        font-size: 2rem;
+    }
+
+    &__logo {
+        color: var(--color-primary);
+        display: flex;
+        align-items: baseline;
+
+        &-icon {
+            width: 2.5rem;
+            height: 2.5rem;
+            fill: currentColor;
+            margin-right: .7rem;
+            @include responsive(big-desktop){
+                width: 3.5rem;
+                height: 3.5rem;
+            }
+
+            &-white {
+                fill: #fff;
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+            &-orange {
+                fill: orange;
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+
+            &-light {
+                fill: var(--color-secondary);
+                width: 2.5rem;
+                height: 2.5rem;
+                margin-right: 2rem;
+            }
+            &-dark {
+                fill: var(--color-primary);
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+        }
+
+        &-text {
+            font-size: 2rem;
+            font-weight: 400; 
+
+            @include responsive(big-desktop){
+                font-size: 3rem;
+            }
+
+            &-white {
+                color: #fff;
+            }
+               
+        }
+    }
+
+    &__navigation {
+        display: flex;
+        font-family: inherit;
+        color: var(--color-primary);
+
+        @include responsive(phone){
+            flex-wrap: wrap-reverse;  
+            font-size: 1.7rem;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+
+        @include responsive(phone-small){
+            display: none;
+        }
+
+        &-footer {
+            list-style: none;
+        }
+    }
+
+    &__item {
+        margin-top: 1rem;
+        margin-right: 2rem;
+        color: inherit;
+    }
+
+    &__sign-up {
+        margin-right: -2rem;
+        margin-left: 2rem;
+
+        @include responsive(phone){
+            margin-left: auto;
+            margin-right: 1rem;
+        }
+    }
+
+    &__search {
+        margin-left: 3rem;
+
+        @include responsive(phone){
+            margin-top: .7rem;
+            margin-left: auto;
+            margin-right: 1rem;
+        }
+    }
+
+}
+
+.home {
+    &__header {
+        text-align: center;
+        padding: 1rem 32%;
+
+        @include responsive(big-desktop){
+            padding: 1rem 33%;
+        }
+
+        @include responsive(phone){
+            padding: .5rem 25%;
+        }
+
+        @include responsive(phone-small){
+            padding: .5rem 10%;
+        }
+    }
+
+    &__content {
+        
+        position: absolute;
+        width: 85%;
+
+       
+
+        @include responsive(tab-land){
+            width: 97%;
+        }
+        &-info {
+            background-color: #fff;
+            border-radius: 8px;
+            width: 55%;
+            margin: 1rem 22.5%;
+            padding: 2rem 0;
+            display: flex;
+            position: relative;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+            @include responsive(big-desktop){
+                width: 70%;
+                margin: 1rem 15%;
+            }
+
+            @include responsive(tab-port){
+                width: 97%;
+                margin: 1%;
+            }
+
+            @include responsive(phone){
+                flex-wrap: wrap;
+            }
+            @include responsive(phone-small){
+                background-color: transparent;
+                box-shadow: none;
+                padding: 0;
+            }
+            
+        }
+
+        &-photo {
+            margin: 0;
+            height: 60rem;
+            width: 100%;
+            border-radius: 10px;
+            margin-top: -6rem;
+           
+            @include responsive(tab-port){
+                height: 50rem;
+            }
+
+            @include responsive(phone){
+                height: 35rem;
+            }
+
+            @include responsive(phone-small){
+                margin-top: -12.5rem;
+            }
+        }
+    }
+}
+
+.section {
+    &__home {
+        margin: 1rem 0;
+    }
+
+    &__featured-home {
+        margin-top: 80rem;
+
+        @include responsive(tab-land){
+            margin-top: 70rem;
+    
+        }
+
+        @include responsive(tab-port){
+            margin-top: 60rem;
+        }
+
+        @include responsive(phone){
+            margin-top: 50rem;
+        }
+
+        @include responsive(phone-small){
+            margin-top: 40rem;
+        }
+        
+    }
+
+    &__information {
+        margin: 10rem 0;
+    }
+
+    &__subscribe {
+        margin: 5rem 0;
+    }
+}
+
+.featured-home {
+    &-top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-content {
+        margin: 3rem 0;
+        display: flex;
+        @include responsive(tab-land){
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        @include responsive(tab-port){
+            flex-direction: column;
+        }
+        
+    } 
+}
+
+.our-services {
+    &-top {
+        margin-bottom: 3rem;
+    }
+
+}
+
+footer {
+    color: #fff;
+
+    margin: 5rem -8rem;
+
+    @include responsive(tab-land){
+        width: 100%;
+
+        margin: 0;
+
+    }
+}
