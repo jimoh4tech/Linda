@@ -107,11 +107,13 @@
 
     &__search {
         margin-left: 3rem;
-
-        @include responsive(phone){
-            
+        flex: 1;
+        @include responsive(phone){   
             margin: 1rem;
+            
         }
+
+
     }
 
 }
@@ -183,7 +185,8 @@
             @include responsive(phone-small){
                 
                 width: 90%;
-                margin: 1% 5%;
+                margin: 1% auto;
+                flex-direction: column;
             }
             
         }
