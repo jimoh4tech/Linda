@@ -43,8 +43,7 @@ body {
       background-color: var(--color-primary); }
       @media only screen and (max-width: 37.5em) {
         .btn-green-in {
-          padding: 1rem;
-          padding-right: 25rem; } }
+          padding: 1rem 15rem; } }
     .btn-green-top {
       color: #fff;
       background-color: var(--color-primary);
@@ -271,7 +270,8 @@ body {
           width: 155%; } }
       @media only screen and (max-width: 43.75em) {
         .description__content-top {
-          width: 90%; } }
+          width: 90%;
+          margin: 0 5%; } }
     .description__content-main {
       display: flex;
       flex-wrap: wrap; }
@@ -504,17 +504,11 @@ body {
       font-size: 2rem; } }
   .header__logo {
     color: var(--color-primary);
-    display: flex;
-    align-items: baseline; }
+    display: flex; }
     .header__logo-icon {
-      width: 2.5rem;
-      height: 2.5rem;
-      fill: currentColor;
-      margin-right: .7rem; }
-      @media only screen and (min-width: 93.75em) {
-        .header__logo-icon {
-          width: 3.5rem;
-          height: 3.5rem; } }
+      width: 4.5rem;
+      height: 4.5rem;
+      margin-right: 1rem; }
       .header__logo-icon-white {
         fill: #fff;
         width: 2.5rem;
@@ -533,25 +527,19 @@ body {
         width: 2.5rem;
         height: 2.5rem; }
     .header__logo-text {
-      font-size: 2rem;
-      font-weight: 400; }
-      @media only screen and (min-width: 93.75em) {
-        .header__logo-text {
-          font-size: 3rem; } }
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-top: 1.3rem; }
       .header__logo-text-white {
         color: #fff; }
   .header__navigation {
     display: flex;
     font-family: inherit;
     color: var(--color-primary); }
-    @media only screen and (max-width: 37.5em) {
-      .header__navigation {
-        flex-wrap: wrap-reverse;
-        font-size: 1.7rem; } }
   .header__list {
     list-style: none;
     display: flex; }
-    @media only screen and (max-width: 30em) {
+    @media only screen and (max-width: 37.5em) {
       .header__list {
         display: none; } }
     .header__list-footer {
@@ -571,22 +559,29 @@ body {
     margin-left: 3rem; }
     @media only screen and (max-width: 37.5em) {
       .header__search {
-        margin-top: .7rem;
-        margin-left: auto;
-        margin-right: 1rem; } }
+        margin: 1rem; } }
 
 .home__header {
   text-align: center;
-  padding: 10% 32%; }
+  padding: 7% 30%; }
   @media only screen and (min-width: 93.75em) {
     .home__header {
-      padding: 10% 33%; } }
+      padding: 7% 31%; } }
+  @media only screen and (max-width: 81.25em) {
+    .home__header {
+      padding: 7% 34%; } }
+  @media only screen and (max-width: 75em) {
+    .home__header {
+      padding: 7% 35%; } }
+  @media only screen and (max-width: 56.25em) {
+    .home__header {
+      padding: 7% 31.7%; } }
   @media only screen and (max-width: 37.5em) {
     .home__header {
-      padding: 10% 25%; } }
+      padding: 6% 29.5%; } }
   @media only screen and (max-width: 30em) {
     .home__header {
-      padding: 10% 10%;
+      padding: 1% 23%;
       margin-bottom: 2rem; } }
 
 .home__content {
@@ -606,22 +601,19 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
     @media only screen and (min-width: 93.75em) {
       .home__content-info {
-        width: 70%;
-        margin: 1rem 15%; } }
+        width: 60%;
+        margin: 1rem 20%; } }
     @media only screen and (max-width: 56.25em) {
       .home__content-info {
-        width: 97%;
-        margin: 1%; } }
+        width: 75%;
+        margin: 1rem 12.5%; } }
     @media only screen and (max-width: 37.5em) {
       .home__content-info {
         flex-wrap: wrap; } }
     @media only screen and (max-width: 30em) {
       .home__content-info {
-        background-color: transparent;
-        box-shadow: none;
-        padding: 0;
-        width: 101%;
-        margin: 1% 0; } }
+        width: 90%;
+        margin: 1% 5%; } }
   .home__content-photo {
     margin: 0;
     height: 60rem;
@@ -636,7 +628,6 @@ body {
         height: 35rem; } }
     @media only screen and (max-width: 30em) {
       .home__content-photo {
-        margin-top: -12.5rem;
         height: auto; } }
 
 .section__home {
@@ -652,10 +643,7 @@ body {
       margin-top: 60rem; } }
   @media only screen and (max-width: 37.5em) {
     .section__featured-home {
-      margin-top: 50rem; } }
-  @media only screen and (max-width: 30em) {
-    .section__featured-home {
-      margin-top: 40rem; } }
+      margin-top: 53rem; } }
 
 .section__information {
   margin: 10rem 0; }

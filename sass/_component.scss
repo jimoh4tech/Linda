@@ -13,9 +13,8 @@
             color: #fff;
             background-color: var(--color-primary);
 
-            @include responsive(phone) {
-                padding: 1rem;
-                padding-right: 25rem;
+            @include responsive(phone){
+                padding: 1rem 15rem;
             }
         }
 
@@ -338,6 +337,7 @@
 
             @include responsive(phone-large){
                 width: 90%;
+                margin: 0 5%;
             }
         }
 

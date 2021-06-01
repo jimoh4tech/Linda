@@ -27,17 +27,12 @@
     &__logo {
         color: var(--color-primary);
         display: flex;
-        align-items: baseline;
+
 
         &-icon {
-            width: 2.5rem;
-            height: 2.5rem;
-            fill: currentColor;
-            margin-right: .7rem;
-            @include responsive(big-desktop){
-                width: 3.5rem;
-                height: 3.5rem;
-            }
+            width: 4.5rem;
+            height: 4.5rem;
+            margin-right: 1rem;
 
             &-white {
                 fill: #fff;
@@ -64,12 +59,9 @@
         }
 
         &-text {
-            font-size: 2rem;
-            font-weight: 400; 
-
-            @include responsive(big-desktop){
-                font-size: 3rem;
-            }
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-top: 1.3rem;
 
             &-white {
                 color: #fff;
@@ -82,18 +74,13 @@
         display: flex;
         font-family: inherit;
         color: var(--color-primary);
-
-        @include responsive(phone){
-            flex-wrap: wrap-reverse;  
-            font-size: 1.7rem;
-        }
     }
 
     &__list {
         list-style: none;
         display: flex;
 
-        @include responsive(phone-small){
+        @include responsive(phone){
             display: none;
         }
 
@@ -122,9 +109,8 @@
         margin-left: 3rem;
 
         @include responsive(phone){
-            margin-top: .7rem;
-            margin-left: auto;
-            margin-right: 1rem;
+            
+            margin: 1rem;
         }
     }
 
@@ -133,18 +119,30 @@
 .home {
     &__header {
         text-align: center;
-        padding: 10% 32%;
+        padding: 7% 30%;
 
         @include responsive(big-desktop){
-            padding: 10% 33%;
+            padding: 7% 31%;
+        }
+
+        @include responsive(mini-lap){
+            padding: 7% 34%;
+        }
+
+        @include responsive(tab-land){
+            padding: 7% 35%;
+        }
+
+        @include responsive(tab-port){
+            padding: 7% 31.7%;
         }
 
         @include responsive(phone){
-            padding: 10% 25%;
+            padding: 6% 29.5%;
         }
 
         @include responsive(phone-small){
-            padding: 10% 10%;
+            padding: 1% 23%;
             margin-bottom: 2rem;
         }
     }
@@ -170,24 +168,22 @@
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
             @include responsive(big-desktop){
-                width: 70%;
-                margin: 1rem 15%;
+                width: 60%;
+                margin: 1rem 20%;
             }
 
             @include responsive(tab-port){
-                width: 97%;
-                margin: 1%;
+                width: 75%;
+                margin: 1rem 12.5%;
             }
 
             @include responsive(phone){
                 flex-wrap: wrap;
             }
             @include responsive(phone-small){
-                background-color: transparent;
-                box-shadow: none;
-                padding: 0;
-                width: 101%;
-                margin: 1% 0;
+                
+                width: 90%;
+                margin: 1% 5%;
             }
             
         }
@@ -208,7 +204,6 @@
             }
 
             @include responsive(phone-small){
-                margin-top: -12.5rem;
                 height: auto;
             }
         }
@@ -233,13 +228,8 @@
         }
 
         @include responsive(phone){
-            margin-top: 50rem;
-        }
-
-        @include responsive(phone-small){
-            margin-top: 40rem;
-        }
-        
+            margin-top: 53rem;
+        }    
     }
 
     &__information {
